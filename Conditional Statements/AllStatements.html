@@ -90,21 +90,64 @@
       //       else{
       //           //statement
       //       }
-
+     
       const jeeMain = 130;
       const jeeAdv = 120;
 
       if (jeeMain > 120 && jeeAdv > 100) {
-         document.write("<br/><br/>JEE-Main Cleared");
+         document.write("<br/>JEE-Main Cleared");
          if (jeeAdv > 80) {
-            document.write("<br/> JEE-Adv Cleared");
+            document.write("<br/>JEE-Adv Cleared");
          }
          else {
-            document.write("<br/> JEE-Main Cleared and JEE-Adv Not Cleared");
+            document.write("<br/>JEE-Main Cleared and JEE-Adv Not Cleared");
          }
       }
       else {
          document.write("Admission Rejected");
+      }
+
+      //5.Switch Case
+      //Syntax:
+      // switch (expression) {
+      //    case value1:
+      //       // Code to be executed if expression matches value1
+      //       break;
+      //    case value2:
+      //       // Code to be executed if expression matches value2
+      //       break;
+      //    case value3:
+      //       // Code to be executed if expression matches value3
+      //       break;
+      //    default:
+      //       // Code to be executed if expression doesn't match any of the values
+      //       break;
+      // }
+
+     
+      const num = 1;
+      switch (num) {
+         case 1:
+            document.write("<br/>One");
+            break;
+
+         case 2:
+            document.write("Two");
+            break;
+         case 3:
+            document.write("Three");
+            break;
+         case 4:
+            document.write("Four");
+            break;
+         case 5:
+            document.write("Five");
+            break;
+         case 6:
+            document.write("Six");
+            break;
+         default:
+            document.write("Not matche");
       }
 
    </script>
