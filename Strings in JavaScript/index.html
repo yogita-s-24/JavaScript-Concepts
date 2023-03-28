@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String and Template String Methods</title>
+</head>
+
+<body>
+    <div class="container">
+        
+        <h1>Lorem ipsum dolor sit.</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eveniet nostrum iure iusto et beatae labore
+            repellat quo rem quae vero commodi animi ab obcaecati quod ducimus odio maiores, unde, ratione amet! </p>
+    </div>
+    <script>
+        // we can used single and double quote also
+        // var string = "this";
+        // var string = 'this';
+        var string = 'thi"s';
+        // console.log(string);
+
+        var name = 'Yogita';
+        var course = 'Web Development';
+        var message = 'Yogita is a silent girl...🤭';
+
+        var temp = `${name} is currently persuing in ${course}`;
+        //Yogita is currently persuing in Web Development
+        console.log(temp);
+
+        //to check length 
+        var len = name.length;
+        console.log(`Length of name is ${len}`);
+        //Length of name is 6
+
+
+        console.log("Hello world \n Hii"); //\n for new line
+        console.log("Hello world \t\t Hii");// \t for adding space
+        console.log("Hello world \b\b\b Hii");
+
+   // to create string
+        var y = new String("this");
+        console.log(y);
+
+        document.getElementById('content').innerHTML = '<h3> this is an h3  heading </h3>'
+        //Added heading by using id name
+
+     
+    </script>
+</body>
+
+</html>
