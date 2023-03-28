@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>If Statement</title>
+</head>
+
+<body>
+   <script>
+      // 1.If- 
+      // Syntax:
+      // if (condition) {
+      //     //statement
+      // }
+      const age = 21;
+      if (age > 18) {
+         // 21 > 18 conditiona is true
+         document.write("You are eligible for voting...")
+      }
+
+
+      //2.if-else-
+      //Syntax:
+      // if (condition) {
+      //     //statement
+      // }
+      // else {
+      //     //statement
+      // }
+
+      const age1 = 15;
+      if (age1 > 18) {
+         document.write("<br/> <br/>You are eligible for voting...")
+      }
+      else {
+         document.write("<br/> <br/>You are not eligible for voting...")
+      }
+
+
+      //3.if-else-ladder
+      //Syntax:
+      //       if (condition A){
+      //           //statement
+      //       }
+      //       else if(condition B){
+      //           //statement
+      //       }
+      //       else if(condition C){
+      //           //statement
+      //       }
+      //       else{
+      //           //statement
+      //       }
+
+      const a = 21;
+
+      if (a == 21) {
+         document.write("<br/><br/>Twenty One");
+      }
+      else if (a == 22) {
+         document.write("Twenty Two");
+      }
+      else if (a == 23) {
+         document.write("Twenty Three");
+      }
+      else if (a == 24) {
+         document.write("Twenty four");
+      }
+      else if (a == 25) {
+         document.write("Twenty five");
+      }
+      else {
+         document.write("Not match");
+      }
+
+      //4.nested-if
+      //Syntax:
+      //       if (condition A){
+      //           //statement
+      //         if (condition B){
+      //           //statement
+      //          }
+      //          else{
+      //           //statement
+      //          }
+      //          }
+      //       else{
+      //           //statement
+      //       }
+
+      const jeeMain = 130;
+      const jeeAdv = 120;
+
+      if (jeeMain > 120 && jeeAdv > 100) {
+         document.write("<br/><br/>JEE-Main Cleared");
+         if (jeeAdv > 80) {
+            document.write("<br/> JEE-Adv Cleared");
+         }
+         else {
+            document.write("<br/> JEE-Main Cleared and JEE-Adv Not Cleared");
+         }
+      }
+      else {
+         document.write("Admission Rejected");
+      }
+
+   </script>
+</body>
+
+</html>
