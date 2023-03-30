@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id selector</title>
+    <style>
+        h1 {
+            background-color: tomato;
+            padding: 5px;
+            border-radius: 15%;
+            border: solid 1px black;
+            box-shadow: 2px 2px 1px 2px rgb(14, 10, 12);
+        }
+
+        h2 {
+            background-color: aqua;
+            padding: 5px;
+            border-radius: 15%;
+            border: solid 1px black;
+            box-shadow: 2px 2px 1px 2px rgb(14, 10, 12);
+        }
+    </style>
+</head>
+
+<body>
+    <!--  1.ID selector  -->
+    <!-- Changing heading content by using id selector -->
+    <!-- Create the variable then find the id by using (getElementById) then (variable-name.innerHTML = "// changing content") -->
+    <h1 id="heading-1">
+        THIS IS MY 1ST HEADING AND I CAN USED ELEMENT BY ID SELCTOR
+    </h1>
+    <h2 id="heading-2">
+        THIS IS MY 2ST HEADING AND I CAN USED ELEMENT BY ID SELCTOR
+    </h2>
+
+    <script>
+        // It is for 1st Id selctor
+        const element = document.getElementById("heading-1");
+        // console.log(element);
+        // element.innerHTML = "I am Yogita";
+
+        // element.innerHTML = "<i>I am Yogita</i>";
+
+        element.innerHTML = "<u><i>Hii... How are u??</i></u>";
+
+
+        // It is for 2nd Id selctor
+        const ele = document.getElementById("heading-2");
+        ele.innerHTML = "Modified Content..."
+    </script>
+
+
+
+</body>
+
+</html>
