@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All String Functions in JS</title>
+</head>
+
+<body>
+    <!-- 1.indexOf()
+    2.lastIndexOf()
+    3.substring(index , index)
+    4.slice(index , index)
+    5.substring(index , index)
+    6.substr(index , index)
+    7.replace('str1' 'str2')
+    8.toUpperCase()
+    9.toLowerCase()
+    10.concat('string')
+    11.trim()
+    12.charAt(index) -->
+    <script>
+        //to print the whole string
+        var str = "This is my first string";
+        console.log(str);
+
+        //first occurance of a substring 
+        //'is' word in the 'th"is"' word at the 2nd index
+        var position = str.indexOf('is');
+        console.log(position);
+
+        //last occurance Of a substring
+        //it is return where our provided string start from which index
+        position = str.lastIndexOf('string');
+        console.log(position);
+
+        //substring from a string
+        //(1,7) means print string from index 1 to 7 =>'his is'
+        // var substr = str.slice(1,7);
+        // var substr = str.substring(1,9);
+        var substr = str.substr(1, 5);
+        console.log(substr);
+
+        //for replacing string
+        var replacing = str.replace('string', 'friend Hurray');
+        console.log(str);
+        console.log(replacing);
+
+        //for upper case
+        console.log(str.toUpperCase());
+
+        // for lower case
+        console.log(str.toLowerCase());
+
+        //for concatenate two strings
+        var newString = str.concat(' New String');
+        console.log(newString);
+
+        var strwhitespaces = "   this contains          whitespaces    ";
+        console.log(strwhitespaces);
+
+        //remove white spaces from starting and ending of the string
+        console.log(strwhitespaces.trim());
+
+        //it is return the index of letter 
+        var element = str.charAt(3);
+        console.log(element);
+
+
+        //Not Important
+        //it is return the character code 
+        // var element = str.charCodeAt(3);
+        // console.log(element);
+
+        //returns the 5th index character
+        console.log(str[5]);
+    </script>
+</body>
+
+</html>
