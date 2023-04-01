@@ -16,19 +16,30 @@
 
     <script>
         // 1.let-is a block of scope variable it's works for specific block
+        //e.g
+        let x = 70;
+        {
+            let y = 100;
+            console.log(y);
+        }
+        // console.log(y); y is not defined out of curly brackets
+
+        console.log(x);
+
         let a = 10;
         let b = 20;
-        document.write(' values are ='+a+" "+b);
+        document.write(' values are =' + a + " " + b);
 
         //2.const-is a constant variable its used only one time
         const c = 10;
         const d = 10;
-        document.write(' values are ='+c+" "+d);
+        document.write(' values are =' + c + " " + d);
 
-       //3.var-is used anywhere of the program
-       var e = 12;
-       var f = 34;
-       document.write(' values are ='+e+" "+f);
+        //3.var-is used anywhere of the program
+        //but var is rarely used it is not important
+        var e = 12;
+        var f = 34;
+        document.write(' values are =' + e + " " + f);
 
 
 
