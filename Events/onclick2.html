@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events</title>
+    <title>Onclick</title>
 </head>
 <body>
-    <!--1. Onclick Event -->
-    <button onclick="sendMessage()">Send Message</button>
+    <button onclick="showDemo(1)">One</button>
+    <button onclick="showDemo(2)">Two</button>
+    <button onclick="showDemo(3)">Three</button>
 
-    
     <script>
-function sendMessage()
-{
-    alert("Message send....");
-}
-
+        function showDemo(num){
+            console.log(num);
+        }
 
     </script>
+    
 </body>
 </html>
