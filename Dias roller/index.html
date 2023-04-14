@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller</title>
+    <style>
+        body {
+
+            background-color: black;
+        }
+
+        .container {
+            background-color: azure;
+            margin: auto;
+            text-align: center;
+            padding: 5px;
+            width: 50%;
+            border-radius: 20px;
+            font-size: 20px;
+            border: 6px double crimson;
+
+        }
+
+        .dice-roller-container {
+
+            width: 250px;
+            background-color: rgba(227, 196, 196, 0.151);
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50px;
+            border: double 5px crimson;
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .dice {
+            height: 100px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+
+
+
+            /* animation-name: dice-roller;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: alternate;
+            animation-timing-function: ease-in-out;
+            animation-delay: 3s; */
+        }
+
+        #dice:hover {
+            /* animation:rotate1 2s linear infinite; */
+            transition: all 0.3s ease-in-out;
+            transform: rotate(360deg);
+
+        }
+
+        .dice-btn-container {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 20px;
+            color: black;
+            cursor: pointer;
+            border: 2px solid crimson;
+            background-color: tan;
+            border-radius: 15px;
+            padding: 5px;
+
+        }
+
+        .dice-btn-container:hover {
+            box-shadow: 1px 1px 3px 1px #c2c2d6;
+        }
+
+        .dice-roller-text {
+            color: white;
+            text-align: center;
+            font-size: 50px;
+
+        }
+    </style>
+
+</head>
+
+<body onload="roll()">
+    <div class="container">
+        <h2>🎲 Dice Roller Game 🎲</h2>
+    </div>
+    <div class="dice-roller-container">
+        <img src="./img/six.png" onmouseover="roll()" alt="Dice" class="dice" id="dice">
+
+        <h3 class="dice-roller-text" id="dice-roller-text">1</h3>
+        <button class="dice-btn-container" onclick="roll()"> 🎲 Roll 🎲</button>
+    </div>
+
+    <script>
+
+        function roll() {
+            const min = 1;
+            const max = 6;
+            const number = Math.floor(Math.random() * (max - min + 1) + min)
+
+            document.getElementById("dice-roller-text").innerHTML = number;
+
+            const diceImg = document.getElementById("dice");
+
+            //Without using if else ladder only used 115 and 116 line logic 
+            //In this case you can used array logic for decreasing our code
+            const diceImages = ["./img/one.png", "./img/two.png", "./img/three.png", './img/four.png', "./img/five.png", "./img/six.png"];
+            dice.src = diceImages[number - 1];
+
+
+        }
+    </script>
+</body>
+
+</html>
