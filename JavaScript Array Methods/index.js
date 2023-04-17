@@ -1,40 +1,76 @@
 // Array can hold many values in a single variables.
 //Array Methods:
-//There are Six array methods in the array.
+//There are 12 array methods in the array.
 
-//1.toString()-Convert an array to the string of comma seperator values
+let name = "Harry";
 
-//eg. (O/p => 1,2,34,4)
-let num = [1,2,3,34,4];
-let b = num.toString();
-console.log(b);
+//1.length():- to check te length of the string
+console.log(name.length);
 
-// Array can hold many values in a single variables.
-//Array Methods:
-//There are Six array methods in the array.
+//----------------------------------------------------------------
 
-//1.toString()-Convert an array to the string of comma seperator values
+//2.toUpperCase:- for upper case letter
+console.log(name.toUpperCase());
 
-//eg. (O/p => 1,2,34,4)
-let num1 = [1,2,3,34,4];
-let b2 = num.toString();
-console.log(b);
+//-----------------------------------------------------------------
 
+//3.toLowerCase:- for lower case letter
+console.log(name.toLowerCase());
 
-//2.join()-join all the array elements using seperator 
-let c = num1.join(" _ ");
-console.log(c, typeof c)
+//4.slice():- for print string to given index to given index
+console.log(name.slice(2, 4));
+console.log(name.slice(1, 3));
 
-let d = num1.join(" and ");
-console.log(d, typeof d)
+//-----------------------------------------------------------------
 
-let e = num1.join(" & ");
-console.log(e, typeof e)
+//5.replce()-for replacing the string
+console.log(name.replace("Har", "Per"));
 
-let f = num1.join(" - ");
-console.log(f, typeof f)
+//------------------------------------------------------------------
 
-//3.
-//4.
-//5.
-//6.
+//6.concat()-for combining the string
+let friend = "Nikesh";
+console.log(name.concat(" is frined of ", friend));
+
+//-----------------------------------------------------------------
+
+//7.trim()-for remove the whitespaces
+let frnd = "       Nilu is a frnd of Nikhil";
+console.log(frnd.trim());
+
+//------------------------------------------------------------------
+let fr = "Ramesh" + "Suresh" + "Nikesh";
+console.log(fr[0]);
+console.log(fr[1]);
+console.log(fr[2]);
+
+//------------------------------------------------------------------
+
+//8.push()-element added at the end of the array
+let num = [1, 2, 3, 4, 5, 6];
+let r = num.push(23)
+ console.log(num,r);
+
+ //--------------------------------------------------------------------
+
+//9.pop()-remove the element from the last
+let s = num.pop();
+console.log(num, s);
+
+//--------------------------------------------------------------------
+
+//10.shift()-remove an element from starting of the array
+let t = num.shift();
+console.log(t, num);
+
+//--------------------------------------------------------------------
+
+//11.unshift()-add an element from starting of the array
+let u = num.unshift();
+console.log(u, num);
+
+//----------------------------------------------------------------------
+
+//12.toString()-Convert an array to the string of comma seperator values
+let f = num.toString();
+console.log(f, num);

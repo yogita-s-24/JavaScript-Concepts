@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bulb ON Off</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        .container {
+            background-color: aqua;
+            height: 400px;
+            width: 500px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 16px;
+            border-radius: 10px;
+            border: solid 5px rgb(6, 6, 7);
+          margin-top: 60px;
+        }
+
+        .img-bulb {
+            display: block;
+            margin: 10px auto 10px auto;
+        }
+
+        .btn-1 {
+            display: block;
+            margin: 10px auto 10px auto;
+            font-size: 15px;
+            border-radius: 20%;
+            border: solid rgb(11, 10, 10) 2px;
+            background-color: green;
+            color: black;
+            padding: 8px;
+            cursor: pointer;
+        }
+
+        .btn-2 {
+            display: block;
+            margin: 10px auto 10px auto;
+            font-size: 15px;
+            border-radius: 20%;
+            border: solid rgb(11, 10, 10) 2px;
+            background-color: red;
+            color: black;
+            padding: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="./img/bulbon.png" class="img-bulb" alt="img" height="300" id="bulb">
+        <div>
+            <button class="btn-1" onclick="chnageBulb(1)">Bulb ON</button>
+            <button class="btn-2" onclick="chnageBulb(0)">Bulb Off</button>
+        </div>
+    </div>
+
+    <script>
+        function chnageBulb(num) {
+            const imgEle = document.getElementById("bulb");
+            if (num == 1) {
+                imgEle.src = "./img/bulbon.png";
+            }
+            else {
+                imgEle.src = "./img/BulbOf.png";
+            }
+
+        }
+    </script>
+</body>
+
+</html>
