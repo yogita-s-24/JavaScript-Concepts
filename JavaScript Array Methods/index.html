@@ -1,104 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
 
 
-    
-// Array can hold many values in a single variables.
-//Array Methods:
-//There are 12 array methods in the array.
 
-let name = "Harry";
+        // Array can hold many values in a single variables.
+        //Array Methods:
+        //There are 12 array methods in the array.
 
-//1.length():- to check te length of the string
-console.log(name.length);
+        let name = "Harry";
 
-//----------------------------------------------------------------
+        //1.length():- to check te length of the string
+        console.log(name.length);
 
-//2.toUpperCase:- for upper case letter
-console.log(name.toUpperCase());
+        //----------------------------------------------------------------
 
-//-----------------------------------------------------------------
+        //2.toUpperCase:- for upper case letter
+        console.log(name.toUpperCase());
 
-//3.toLowerCase:- for lower case letter
-console.log(name.toLowerCase());
+        //-----------------------------------------------------------------
 
-//4.slice():- for print string to given index to given index
-console.log(name.slice(2, 4));
-console.log(name.slice(1, 3));
+        //3.toLowerCase:- for lower case letter
+        console.log(name.toLowerCase());
 
-//-----------------------------------------------------------------
+        //4.slice():- for print string to given index to given index
+        console.log(name.slice(2, 4));
+        console.log(name.slice(1, 3));
 
-//5.replce()-for replacing the string
-console.log(name.replace("Har", "Per"));
+        //-----------------------------------------------------------------
 
-//------------------------------------------------------------------
+        //5.replce()-for replacing the string
+        console.log(name.replace("Har", "Per"));
 
-//6.concat()-for combining the string
-let friend = "Nikesh";
-console.log(name.concat(" is frined of ", friend));
+        //------------------------------------------------------------------
 
-//-----------------------------------------------------------------
+        //6.concat()-for combining the string
+        let friend = "Nikesh";
+        console.log(name.concat(" is frined of ", friend));
 
-//7.trim()-for remove the whitespaces
-let frnd = "       Nilu is a frnd of Nikhil";
-console.log(frnd.trim());
+        //-----------------------------------------------------------------
 
-//------------------------------------------------------------------
-let fr = "Ramesh" + "Suresh" + "Nikesh";
-console.log(fr[0]);
-console.log(fr[1]);
-console.log(fr[2]);
+        //7.trim()-for remove the whitespaces
+        let frnd = "       Nilu is a frnd of Nikhil";
+        console.log(frnd.trim());
 
-//------------------------------------------------------------------
+        //------------------------------------------------------------------
+        let fr = "Ramesh" + "Suresh" + "Nikesh";
+        console.log(fr[0]);
+        console.log(fr[1]);
+        console.log(fr[2]);
 
-//8.push()-element added at the end of the array
-let num = [1, 2, 3, 4, 5, 6];
-let r = num.push(23)
- console.log(num,r);
+        //------------------------------------------------------------------
 
- //--------------------------------------------------------------------
+        //8.push()-element added at the end of the array
+        let num = [1, 2, 3, 4, 5, 6];
+        let r = num.push(23)
+        console.log(num, r);
 
-//9.pop()-remove the element from the last
-let s = num.pop();
-console.log(num, s);
+        //--------------------------------------------------------------------
 
-//--------------------------------------------------------------------
+        //9.pop()-remove the element from the last
+        let s = num.pop();
+        console.log(num, s);
 
-//10.shift()-remove an element from starting of the array
-let t = num.shift();
-console.log(t, num);
+        //--------------------------------------------------------------------
 
-//--------------------------------------------------------------------
+        //10.shift()-remove an element from starting of the array
+        let t = num.shift();
+        console.log(t, num);
 
-//11.unshift()-add an element from starting of the array
-let u = num.unshift();
-console.log(u, num);
+        //--------------------------------------------------------------------
 
-//----------------------------------------------------------------------
+        //11.unshift()-add an element from starting of the array
+        let u = num.unshift();
+        console.log(u, num);
 
-//12.toString()-Convert an array to the string of comma seperator values
-let f = num.toString();
-console.log(f, num);
+        //----------------------------------------------------------------------
 
-//----------------------------------------------------------------------
+        //12.toString()-Convert an array to the string of comma seperator values
+        let f = num.toString();
+        console.log(f, num);
 
-//13.delete([index]);-delete the element whose index is given
+        //----------------------------------------------------------------------
 
-let num1 = [188,892,783,499,598];
-delete num1[1];
-console.log(num1);
+        //13.delete([index]);-delete the element whose index is given
 
-//------------------------------------------------------------------------
+        let num1 = [188, 892, 783, 499, 598];
+        delete num1[1];
+        console.log(num1);
+
+        //------------------------------------------------------------------------
+
+        //Example of concatination of 2 arrays
+        let x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        let y = [11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+
+        let newarr = x.concat(y);
+        console.log(newarr);
+
+        //----------------------------------------------------------------------------------
+
+        //14.sort():-sorted elements in ascending order (1,223,12,76,675,98,43)=>o/p =>(1,12,223,43,675,76,98)
+        //It is used to sort the original array
+        //This e.g by using array function
+        //its return in decending order   => o/p ==> 551,229,22,14,8,7,6,5,4 
+        let compare = (a, b) => {
+            return b - a
+        }
+        let number = [551, 22, 4, 14, 5, 6, 7, 8, 229];
+        number.sort(compare);
+        console.log(number);
+
+        //-------------------------------------------------------------------------------------
+
+        //15.reverse()-its reverse the array
+        //its return in ascending order   => o/p ==>4,5,6,7,8,14,22,229,551
+        number.reverse();
+        console.log(number);
+
+        //-----------------------------------------------------------------
+
+        //16.splice and slice
+        //i.splice()-return can be used to add new items to an array
+
+        let no = [551,675,283,987,546,21,332,67];
+        let deletedValue = no.splice(2,4,54,543,765,5612);
+        console.log(deletedValue);
 
 
-</script>
+        //ii.slice()-its create a new array can't modify given array
+        let noarr = no.slice(2,5);
+        console.log(noarr);
+
+
+    </script>
 </body>
+
 </html>
