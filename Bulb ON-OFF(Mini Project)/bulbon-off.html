@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb On OFF</title>
+    <style>
+        body{
+            background-color: azure;
+        }
+        .container {
+            height: 500px;
+            width: 500px;
+            background-color: #103232;
+            display: block;
+            margin: 10px auto 10px auto;
+            border: solid red 5px;
+            border-radius: 20px;
+        }
+
+        .img {
+            height: 300px;
+            display: block;
+            margin: 10px auto 10px auto;
+            margin-top: 50px;
+        }
+
+        .btn-1 {
+            display: block;
+            margin: 10px auto 10px auto;
+            font-size: 15px;
+            border-radius: 20%;
+            border: solid rgb(11, 10, 10) 2px;
+            background-color: green;
+            color:black;
+            padding: 8px;
+            cursor: pointer;
+        }
+        .btn-2{
+            display: block;
+            margin: 10px auto 10px auto;
+            font-size: 15px;
+            border-radius: 20%;
+            border: solid black 2px;
+            background-color: red;
+            color:black;
+            padding: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="./img/bulbon.png" alt="image" class="img" id="bulb">
+        <button class="btn-1" onclick="changeMode(1)">Bulb ON</button>
+        <button class="btn-2" onclick="changeMode(0)">Bulb OFF</button>
+    </div>
+
+    <script>
+
+        
+        function changeMode(num){
+            const imgElement = document.getElementById("bulb");
+            if(num==1){
+
+                imgElement.src="./img/bulbon.png" 
+            }
+            else{
+                
+                imgElement.src="./img/BulbOf.png" 
+            }
+            
+        }
+        </script>
+</body>
+
+</html>
