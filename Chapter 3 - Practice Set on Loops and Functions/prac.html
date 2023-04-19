@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let marks = {
+        //     harray:234,
+        //     Shubham:989,
+        //     Kiran:453,
+        //     Harshal:200
+        // }
+        // for(let i = 0; i<Object.keys(marks).length; i++){
+        //     document.write("<br/>The marks of " +Object.keys(marks)[i]+ " are " +marks[Object.keys(marks)[i]]);
+            
+        // }
+
+
+        //By using simple for loop
+        let marks = {
+            harray : 89,
+            Kiran : 78,
+            Rahul : 34
+        }
+        for ( let i=0; i<Object.keys(marks).length; i++){
+            console.log("the marks "+Object.keys(marks)[i]+ " are " +marks[Object.keys(marks)[i]]);
+            
+        }
+      
+        //By using for in loop
+        for ( let keys in marks){
+            console.log("the marks "+keys+ " are " +marks[keys]);
+            
+        }
+
+        //By using for of loop
+        
+    </script>
+</body>
+</html>
