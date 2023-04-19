@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice-5</title>
+</head>
+
+<body>
+    <script>
+        // Chapter 5 - Practice Set on Arrays
+        //Que 1) Create an array of numbers and take input from user to add number to this array.
+        // let arr = [1, 2, 3, 4, 5, 6, 7, 89];
+        // let a = parseInt(prompt("Enter the number"));
+        // arr.push(a);
+        // document.write(arr);
+
+        //push() method for adding elements
+        //prompt is not working on node js with js code
+
+        //..................................................................................................
+
+        //Que 2) Keep adding number to the array in 1 until 0 is added to the array then stop the entering no. and print the array.
+
+        let arr1 = [1, 2, 3, 4, 5, 36, 7, 84];
+        let b;
+        do {
+            b = parseInt(prompt("Enter the number"));
+            arr1.push(b);
+        } while (b != 0);
+        console.log(arr1);
+
+      //...................................................................................................
+      
+      //Que 3) Filter for number divisible by 10 from a given array.
+
+      let arr2 = [10,2,3,4,50,90];
+      let n = arr2.filter((x)=>{
+        return x % 10 == 0
+      })
+      console.log(n);
+
+      //....................................................................................................
+
+      //Que4) Create an array of square of given number.
+
+      let arr3 = [10,2,3,4,50,90];
+      let m = arr3.map((x)=>{
+        return x * x 
+      })
+      console.log(m);
+
+      //......................................................................................................
+
+      
+      //Que5) Use reduce to calculate factorial of a given number from an array of first n natural numbers(n being the number whose factorial needs to be calculated.)
+    
+      let arr4 = [1,2,3,4,5,6];
+      let s = arr4.reduce(( x1, x2 )=>{
+        return x1 * x2 
+      })
+      console.log(s);
+    </script>
+</body>
+
+</html>
