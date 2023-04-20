@@ -1,0 +1,12 @@
+body{
+    background-color: bisque;
+}
+span{
+    color: red;
+}
+h1{
+
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 20px;
+}
