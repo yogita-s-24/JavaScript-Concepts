@@ -10,10 +10,11 @@
     <!-- the text content of a Tweet can contain up to 280 characters -->
     <Script>
 
-        var tweet = prompt("Compose your tweet");
-        var counttweet = tweet.length;
+        alert(prompt("Compose your name").slice(0,8));
+        //In this case you can enter note characters but print only 0 to 8 character 
         
-        alert("You have written" + counttweet+ " characters, you have " + (140 - counttweet) + " character remaining.")
+        alert(prompt("Compose your tweet").slice(0,140));
+        
     </Script>
 </body>
 </html>
