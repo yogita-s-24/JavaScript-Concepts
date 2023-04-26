@@ -13,3 +13,10 @@
 
 
     //Logic is correct bt this code not support on vs code it's only work on Replit 
+
+
+
+
+
+
+
