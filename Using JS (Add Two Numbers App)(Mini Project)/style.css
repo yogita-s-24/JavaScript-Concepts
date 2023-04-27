@@ -1,0 +1,45 @@
+.container{
+    width: 400px;
+    padding: 50px;
+    margin:0 auto;
+    border-radius: 30px;
+    border: rgba(6, 6, 5, 0.817) 7px double;
+    background-image: url('https://source.unsplash.com/random/1400x400/?mathematics');
+    margin-top: 100px;
+}
+
+input{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    margin-top: 10px;
+    border: 2px solid rgb(181, 105, 105);
+    font-size: 20px;
+    border-radius: 15%;
+    background-color: pink;
+}
+input:hover{
+    background-color: pink;
+    color: black;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+
+button{
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border: 2px solid rgb(181, 105, 105);
+    border-radius: 15%;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    background-color: pink;
+    color: black;
+    border: 2px solid rgb(0, 0, 0);
+}
