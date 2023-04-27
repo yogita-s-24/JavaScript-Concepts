@@ -44,7 +44,7 @@ button:hover{
     border: 2px solid rgb(0, 0, 0);
 }
 
-#result{
+#sum{
     text-align: center;
     font-weight: bold;
     font-size: 30px;
