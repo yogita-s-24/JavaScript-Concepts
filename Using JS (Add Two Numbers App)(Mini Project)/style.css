@@ -1,5 +1,5 @@
 .container{
-    width: 400px;
+    width: 300px;
     padding: 50px;
     margin:0 auto;
     border-radius: 30px;
@@ -42,4 +42,10 @@ button:hover{
     background-color: pink;
     color: black;
     border: 2px solid rgb(0, 0, 0);
+}
+
+#result{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
 }
