@@ -10,5 +10,5 @@ function student(stud){
     console.log(`Hello 👋 ${stud} Welcome Here!!!`)
 }
 
-const arra = ["sau" ,"Oggy" ,"harshu"]
+const arra = ["sau" ,"Oggy" ,"harshu","Kirti"]
 arra.map(student);
