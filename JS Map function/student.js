@@ -10,5 +10,14 @@ function student(stud){
     console.log(`Hello 👋 ${stud} Welcome Here!!!`)
 }
 
-const arra = ["sau" ,"Oggy" ,"harshu","Kirti"]
-arra.map(student);
+const array = ["sau" ,"Oggy" ,"harshu","Kirti","tanu"];
+array.map(student);
+
+
+
+function students(stud1){
+    console.log(`Hello Students ${stud1} Welcome Here!!!`)
+}
+
+const array1 = ["sau" ,"Oggy" ,"harshu","Kirti","tanu"];
+array.map(students);
