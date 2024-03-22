@@ -7,3 +7,7 @@
 ((name) => {
   console.log("2nd DB connected.");
 })("Sona");
+
+((str1, str2) =>{
+  return console.log("Both are combine together =", str1, str2)
+})("Hii...", "How are u?");
