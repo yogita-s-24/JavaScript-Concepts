@@ -87,3 +87,9 @@ function returnSecondArray(getArray){
 
 // console.log(returnSecondArray(newArray));
 console.log(returnSecondArray([200, 400, 600, 800]));
+
+
+// instead of using a variable to store the return value of a function:
+
+let x = toCelsius(77);
+let text = "The temperature is " + x + " Celsius";

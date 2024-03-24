@@ -5,7 +5,7 @@ let obj = {
     first(){
         console.log(`${this.name} is a doctor.`);
     },
-    second :  ()=> {
+    second :  () => {
         console.log(`${this.name} is a plumber.`);
     }
 }
