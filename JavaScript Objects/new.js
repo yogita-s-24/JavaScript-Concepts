@@ -84,3 +84,10 @@ const city = {
 
 //At a time we will print two value
 // console.log(city.pune.slice(0,2).join(","));
+
+
+   const students={
+    "name": "suraj",
+    "name":"anand"
+   };
+   console.log(student);
