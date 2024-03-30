@@ -6,10 +6,10 @@
 // }
 
 
-// const isUserloggedIn = true;
-// if (isUserloggedIn) {
-//   console.log("Executed...");
-// }
+const isUserloggedIn = true;
+if (isUserloggedIn) {
+  console.log("Executed...");
+}
 
 
 // const temperature = 41;
@@ -65,4 +65,8 @@ const loggedInFromEmail = true
 
 if(loggedInFromGoogle || loggedInFromEmail){
     console.log("User logged in.");
+}
+
+if(loggedInFromGoogle || loggedInFromEmail || true){
+    console.log("User logged in successfully.");
 }

@@ -12,9 +12,6 @@ user.userName = "Samy";
 user.welcomeMessage();
 
 // console.log(this);
-
-
-
 function chai() {
     const username = "Yogita"
     // console.log(this);
