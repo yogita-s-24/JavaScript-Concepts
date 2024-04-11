@@ -23,4 +23,14 @@ const newNumbers = myNumber.filter((num)=>{
     return num % 2 
 })
 
-console.log(newNumbers);
+// console.log(newNumbers);
+
+const myNo = [2,4,5,3,4,5,6];
+
+const newnums = [];
+myNo.forEach((num)=>{
+    if(num>4){
+        newnums.push(num)
+    }
+})
+console.log(newnums);
