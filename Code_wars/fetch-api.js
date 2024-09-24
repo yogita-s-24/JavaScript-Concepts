@@ -13,3 +13,14 @@ const fetchData = async () => {
 };
 
 fetchData();
+
+async function getData (){
+  const res = await fetch("https://jsonplaceholder.typicode.com/users");
+
+  const data = res.json();
+
+  console.log(data);
+}
+
+const todo = console.log(getData());
+
